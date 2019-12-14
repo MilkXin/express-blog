@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const { getList, getDetail, newBlog, updateBlogData, delBlog } = require('../controller/blog')
 const { SuccessModel, ErrorModel } = require('../model/resModel')
-const loginCheck = require('../middleware/')
+const loginCheck = require('../middleware/loginCheck')
 
 router.get('/list', (req, res, next) => {
     const author = req.query.author || ''

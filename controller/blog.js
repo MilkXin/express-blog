@@ -41,12 +41,6 @@ const newBlog = (blogData = {}) => {
             id: inserrtData.insertId
         }
     })
-
-
-
-    return {
-        id: 3 //表示新建博客，插入到数据表里的id
-    }
 }
 
 const updateBlogData = (id, blogData = {}) => {
